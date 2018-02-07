@@ -7,7 +7,7 @@ class App extends Component {
     persons: [
       { id: '1001', name: 'Mayank', age: 32 },
       { id: '1002', name: 'Athrva', age: 4 },
-      { id: '1003', name: 'Shinni', age: 29 }
+      { id: '1003', name: 'Nitin', age: 29 }
     ],
     otherState: 'some other value',
     showPersons: false
@@ -20,7 +20,7 @@ class App extends Component {
   //     persons: [
   //       { name: newName, age: 32 },
   //       { name: 'Athrva', age: 4 },
-  //       { name: 'Shinni', age: 30 }
+  //       { name: 'Nitin', age: 30 }
   //     ]
   //   });
   // }
@@ -79,8 +79,7 @@ class App extends Component {
                 age={person.age}
                 key={person.id}
                 changed={(event) => this.nameChangedHandler(event, person.id)} />
-            })
-          }
+            })}
         </div>
       );
       style.backgroundColor = 'red';
